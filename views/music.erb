@@ -1,0 +1,38 @@
+<div class="small-content">
+  <h1>Discography</h1>
+  <h2>Here you can find info about our distributed music.</h2>
+</div>
+<% @data.each do |disk| %>
+
+  <div class="row">
+    <div class="disk-wrapper">
+      <h3><%= disk["year"]%> – <%= disk["name"]%></h3>
+      <div class="cells">
+        <div class="cell cover-wrapper">
+          <img class="cover" src='<%= "/img/#{disk["cover_name"]}"%>' alt="<%= disk["cover_name"]%>"/>
+        </div> <!-- cover cell -->
+
+        <div class="cell">
+          <div class="tracks-wrapper">
+            <ol class="tracks-list">
+              <% disk["tracks"].each do |track| %>
+                <li>
+                  <span><%= track["name"] %></span>
+                  <span class="line"></span>
+                  <span class="duration">
+                    <%= track["duration"]%>
+                  </span>
+                </li>
+              <% end %>
+            </ol>
+          </div> <!-- tracks-wrapper -->
+        </div> <!-- tracks cell -->
+      </div> <!-- cells -->
+      <div class="store-links">
+        <a href="<%= disk["itunes_link"] %>">Buy it on iTunes</a>
+        <a href="<%= disk["google_play_link"] %>">Buy it on Google Play</a>
+      </div>
+    </div> <!-- disk-wrapper -->
+  </div> <!-- row -->
+  <hr>
+<% end %>

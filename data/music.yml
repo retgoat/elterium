@@ -1,0 +1,164 @@
+disks:
+  -
+    name: "La Terre est bleue comme une orange"
+    label: "Georgaphy Edge"
+    year: "2009"
+    cover_name: "earth_2009.jpg"
+    tracks:
+      -
+        name: "Kaleidoscope"
+        duration: "00:03:11"
+        number: 1
+      -
+        name: "White sun"
+        duration: "00:03:16"
+        number: 2
+      -
+        name: "Hello Richie!"
+        duration: "00:03:06"
+        number: 3
+      -
+        name: "Fall remembers two of us"
+        duration: "00:03:12"
+        bumber: 4
+      -
+        name: :Edinburgh flowers"
+        duration: "00:04:22"
+        number: 5
+      -
+        name: "Cyborgs"
+        duration: "00:03:09"
+        number: 6
+      -
+        name: :Entropia"
+        duration: "00:03:11"
+        number: 7
+      -
+        name: "Samba"
+        duration: "00:03:52"
+        number: 8
+      -
+        name: "Purple funk"
+        duration: "00:03:38"
+        number: 9
+      -
+        name: "Holocaust"
+        duration: "00:02:40"
+        number: 10
+      -
+        name: "Rose of the winds"
+        duration: "00:04:26"
+        number: 11
+      -
+        name: "Milky way"
+        duration: "00:04:02"
+        number: 12
+      -
+        name: "Kenia"
+        duration: "00:04:48"
+        number: 13
+      -
+        name: "Margarita"
+        duration: "00:02:21"
+        bumber: 14
+      -
+        name: "Dirak's sea"
+        duration: "00:03:05"
+        number: 15
+    itunes_link: "https://itunes.apple.com/us/album/la-terre-est-bleue-comme-une-orange/id1208303564"
+    google_play_link: "https://play.google.com/store/music/album?id=Bsfr4sx5yhrzfvdfmpesolrl2ku&tid=song-T2l4vtknlqq7rirr22tngrpcnpu"
+    amazon_link: "https://www.amazon.com/gp/product/B01BPW05YM"
+  -
+    name: "Bushido"
+    label: "Georgaphy Edge"
+    year: "2012"
+    cover_name: "bushido_2012.jpg"
+    tracks:
+      -
+        duration: "00:04:15"
+        name: "Best day"
+        number: 1
+      -
+        duration: "00:02:32"
+        name: "Autlan De Navarro"
+        number: 2
+      -
+        duration: "00:02:58"
+        name: "Focus point"
+        number: 3
+      -
+        duration: "00:04:01"
+        name: "Bushido"
+        number: 4
+      -
+        duration: "00:02:45"
+        name: "Zarathustra"
+        number: 5
+      -
+        duration: "00:03:08"
+        name: "Gaia"
+        number: 6
+      -
+        duration: "00:03:24"
+        name: "Ashes of a rose"
+        number: 7
+      -
+        duration: "00:03:05"
+        name: "NNN"
+        number: 8
+      -
+        duration: "00:03:13"
+        name: "Machines age"
+        number: 9
+      -
+        duration: "00:01:54"
+        name: "Per aspera ad astra"
+        number: 10
+    itunes_link: "https://itunes.apple.com/us/album/bushido/id1208009998"
+    google_play_link: "https://play.google.com/store/music/album?id=B6db7rej2yum5wy26fptrj4dl3u&tid=song-Talnrfa4kkdsn6pkwaf6nm6q7oe"
+    amazon_link: "https://www.amazon.com/gp/product/B01BPTNEY8"
+  -
+    name: "Chain Reaction"
+    label: "Georgaphy Edge"
+    year: "2017"
+    cover_name: "chain_2017.jpg"
+    itunes_link: "https://itunes.apple.com/ru/album/chain-reaction/id1220467986?l=en"
+    google_play_link: "https://play.google.com/store/music/album?id=Bzcj5qo6bakwzmyqsremohexe7m&hl=en"
+    amazon_link: "https://www.amazon.com/gp/product/B01BPTNEY8"
+    tracks:
+      -
+        duration: "00:02:09"
+        name: "Genom"
+        number: 1
+      -
+        duration: "00:04:30"
+        name: "Golfstream"
+        number: 2
+      -
+        duration: "00:04:30"
+        name: "Long road to august"
+        number: 3
+      -
+        duration: "00:02:16"
+        name: "Svetom"
+        number: 4
+      -
+        duration: "00:03:55"
+        name: "Melkhior"
+        number: 5
+      -
+        duration: "00:02:54"
+        name: "Kaspar"
+        number: 6
+      -
+        duration: "00:03:31"
+        name: "Balthazar"
+        number: 7
+      -
+        duration: "00:03:46"
+        name: "Chain reaction"
+        number: 8
+      -
+        duration: "00:03:05"
+        name: "Across the universe"
+        number: 9

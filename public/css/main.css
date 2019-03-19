@@ -1,0 +1,525 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html{
+  height: 100%;
+}
+
+* html body {height: 100%;}
+
+
+html {
+  background:url("../img/background.jpg") 0 0 no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+
+/* Space out content a bit */
+body, form, ul, table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  line-height: 1.4em;
+}
+
+a {
+  color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.slogan-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+h1, h2 {
+  border-bottom: dotted 1px rgba(255,255,255, 0.3);
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.small-content h2 {
+  border: none;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.slogan-wrapper h1 {
+  font-size: 18px;
+  font-weight: 300;
+  border: none;
+}
+
+.slogan-wrapper h2 {
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+}
+
+.logo {
+  width: 100%;
+  height: 100px;
+  background-image: url('/images/indigo_logo_white.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+
+.main-logo {
+  width: 50%;
+}
+
+ul.nav {
+  padding: 0;
+}
+
+ul.nav li {
+  display: inline-block;
+  padding: 0 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+ul.nav li a{
+  padding: 0 5px 10px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+ul.nav li a:hover {
+  border-bottom: solid 1px #ffffff;
+  opacity: 1;
+}
+
+ul.nav li a.active {
+  border-bottom: solid 1px #ffffff;
+  opacity: 1;
+}
+
+ul.nav li a.active:hover  {
+  border-bottom: solid 1px #ffffff;
+  opacity: 1;
+}
+
+/* Phoenix flash messages */
+.alert:empty { display: none; }
+
+/* Phoenix inline forms in links and buttons */
+form.link, form.button {
+  display: inline;
+}
+
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+
+/* Index page */
+.indigo-photo-wrapper {
+  text-align: center;
+}
+
+.indigo-photo-wrapper img {
+  width: 90%;
+}
+
+.store-logos {
+  text-align: center;
+}
+
+.store-logos img:first-child {
+  padding-left: 0;
+}
+
+.store-logos img {
+  padding: 20px  0 20px 20px;
+}
+
+
+/* Index page */
+
+/* Discography */
+
+.disc-wrapper {
+  margin-bottom: 50px;
+}
+
+.disc-wrapper h3 {
+  font-size: 16px;
+  padding-bottom: 2px;
+}
+
+.row {
+  display: table;
+  overflow: hidden;
+  width: 100%;
+}
+
+.cell {
+  display: table-cell;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* cover cell */
+.cells .cell:first-child{
+  width: 43%;
+}
+
+/* tracks list cell */
+.cells .cell:nth-child(2){
+  width: 55%;
+}
+
+img.cover {
+  width: 100%;
+}
+
+
+.disc-info a {
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.cover img {
+  margin: 0 auto;
+  border: solid 1px #ffffff;
+}
+
+ol.tracks-list {
+  margin: 0;
+}
+
+ol.tracks-list li {
+}
+
+span.duration {
+  float: right;
+}
+
+
+.store-links {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.store-links a {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  border: solid 1px #ffffff;
+  text-decoration: none;
+}
+
+.store-links a:hover {
+  padding: 5px;
+  border: solid 1px #ffffff;
+  text-decoration: none;
+  background: rgba(222, 222, 222, 0.5);
+}
+/* Discography*/
+
+/* Band */
+.social{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.social img {
+  width: 50px;
+  margin-right: 30px;
+  border: none;
+}
+
+.bottom {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.fb-like, .tw-share{
+  display: inline-block;
+}
+
+.tw-share a{
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.fb_iframe_widget span {
+  vertical-align: baseline !important;
+}
+/* Band */
+
+/* Videos */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Videos */
+
+/* ----------- iPhone 4 (4S) and 5(5S) ----------- */
+
+/* Portrait and Landscape */
+@media (min-width: 320px)
+  and (max-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  ul.nav li {
+    display:block;
+  }
+  ul.nav li a:hover, ul.nav li a.active, ul.nav li a.active:hover {
+    border: none;
+  }
+
+  .indigo-photo-wrapper img {
+    width: 90%;
+  }
+
+  .store-logos img:first-child {
+    padding-left: 20px;
+  }
+
+
+  .main-logo{
+    width: 100%;
+  }
+
+  .cells .cell:first-child {
+    width: 100%;
+  }
+
+  .cells .cell:nth-child(2) {
+    width: 100%;
+  }
+
+}
+
+/* Portrait */
+@media (min-width: 320px)
+  and (max-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .main-logo{
+    width: 90%;
+  }
+
+  .cells .cell:first-child {
+    width: 100%;
+  }
+
+  .cells .cell:nth-child(2) {
+    width: 100%;
+  }
+}
+
+/* Landscape */
+@media (min-width: 320px)
+  and (max-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .main-logo{
+    width: 70%;
+  }
+
+  .cells .cell:first-child {
+    width: 100%;
+  }
+
+  .cells .cell:nth-child(2) {
+    width: 100%;
+  }
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media(min-width: 414px)
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    img.cover {
+      width: 70%;
+
+    }
+
+}
+
+/* Portrait */
+@media (min-width: 414px)
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .cover-wrapper {
+      margin: 0 auto;
+      text-align: center;
+    }
+    img.cover {
+      width: 100%;
+
+    }
+
+    .cover-wrapper img {
+    }
+}
+
+/* Landscape */
+@media (min-width: 414px)
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+
+}

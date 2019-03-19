@@ -1,0 +1,35 @@
+<div class="popup-gallery">
+
+  <% @data.each do |picture| %>
+    <a href="<%= picture.dig("images", "standard_resolution", "url") %>">
+      <img class="img-rounded" alt="Photo" src="<%= picture.dig("images", "low_resolution", "url") %>" style="width: 140px; height: 140px; margin: 10px">
+    </a>
+  <% end %>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.popup-gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Loading image #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+      },
+      image: {
+        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+        titleSrc: function(item) {
+          var title = item.el.attr('title');
+
+          if (title != undefined) {
+            return title + '<small>by Elterium</small>';
+          }
+
+          return '<small>by Elterium</small>';
+        }
+      }
+    });
+  });
+</script>

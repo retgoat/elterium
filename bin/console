@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
+require 'pry-byebug'
+require "bundler/setup"
+Bundler.require
+
+# load an app
+require_relative "../app.rb"
+
+# start console
+Pry.start
