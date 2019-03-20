@@ -100,12 +100,12 @@ html{
 
 
 html {
-  background:url("../img/background.jpg") 0 0 no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background:url("../img/hypnotize.png") 0 0 repeat;
+  /*background-attachment: fixed;*/
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
+  /*background-size: cover;*/
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   text-shadow: 0 0 1px rgba(255,255,255,0.3);
@@ -115,16 +115,18 @@ html {
 body, form, ul, table {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #000;
   line-height: 1.4em;
 }
 
 a {
-  color: #ffffff;
+  color: #000;
 }
 
 .container {
   margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
 }
 
 .header {
@@ -137,12 +139,13 @@ a {
 }
 
 h1, h2 {
-  border-bottom: dotted 1px rgba(255,255,255, 0.3);
+  padding-bottom: 5px;
+  border-bottom: dotted 1px rgba(0,0,0, 0.3);
 }
 
 h1 {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .small-content h2 {
@@ -195,17 +198,17 @@ ul.nav li a{
 }
 
 ul.nav li a:hover {
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 1px #000;
   opacity: 1;
 }
 
 ul.nav li a.active {
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 1px #000;
   opacity: 1;
 }
 
 ul.nav li a.active:hover  {
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 1px #000;
   opacity: 1;
 }
 
@@ -248,6 +251,13 @@ form.link, form.button {
 
 .store-logos img {
   padding: 20px  0 20px 20px;
+}
+
+a.store-link {
+  background-color: #000;
+  padding: 30px 0;
+  border-radius: 10px;
+  margin: 0 10px;
 }
 
 
@@ -300,7 +310,7 @@ img.cover {
 
 .cover img {
   margin: 0 auto;
-  border: solid 1px #ffffff;
+  border: solid 1px #000;
 }
 
 ol.tracks-list {
@@ -324,15 +334,16 @@ span.duration {
   display: inline-block;
   padding: 5px;
   margin: 10px;
-  border: solid 1px #ffffff;
+  border: solid 1px #000;
   text-decoration: none;
 }
 
 .store-links a:hover {
-  padding: 5px;
-  border: solid 1px #ffffff;
-  text-decoration: none;
-  background: rgba(222, 222, 222, 0.5);
+ /* padding: 5px;
+  border: solid 1px #000;
+  text-decoration: none;*/
+  /*background: rgba(222, 222, 222, 0.5);*/
+  opacity: 0.7;
 }
 /* Discography*/
 
@@ -367,8 +378,14 @@ span.duration {
 }
 /* Band */
 
-/* Videos */
+/* Photos */
+.popup-gallery {
+  text-align: center;
+}
 
+/* Photos */
+
+/* Videos */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -408,10 +425,10 @@ span.duration {
     width: 90%;
   }
 
-  .store-logos img:first-child {
+/*  .store-logos img:first-child {
     padding-left: 20px;
   }
-
+*/
 
   .main-logo{
     width: 100%;

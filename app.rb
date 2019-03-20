@@ -38,16 +38,16 @@ class App < Sinatra::Base
   end
 
   get '/photos' do
-    @data = Cache.fetch('photos-cache', 3600) do
+    @data = Cache.fetch('photos-cache', 86_400) do
       Instagram.client(access_token: ENV["INSTAGRAM_TOKEN"]).user_recent_media
     end
     erb :photos
   end
 
   get '/videos' do
-    @videos = Cache.fetch('videos-cache', 3600) do
-      ::Yt.configuration.api_key = ENV["YOUTUBE_KEY"]
-      channel = ::Yt::Channel.new(id: "UCK-CRSAuJoMmSyKFFPtJphw")
+    @videos = Cache.fetch('videos-cache', 2_628_000) do
+      Yt.configuration.api_key = ENV["YOUTUBE_KEY"]
+      channel = Yt::Channel.new(id: "UCK-CRSAuJoMmSyKFFPtJphw")
       channel.videos.map { |v| v.embed_html }
     end
     erb :videos
@@ -59,11 +59,7 @@ class App < Sinatra::Base
 
   helpers do
     def active_class(path = '')
-      if request.path_info == "/#{path}"
-        'active'
-      else
-        ''
-      end
+      request.path_info == "/#{path}" ? 'active' : ''
     end
 
     def title

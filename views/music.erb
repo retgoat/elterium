@@ -20,7 +20,7 @@
                   <span><%= track["name"] %></span>
                   <span class="line"></span>
                   <span class="duration">
-                    <%= track["duration"]%>
+                    <%= Time.parse(track["duration"]).strftime("%M:%S") %>
                   </span>
                 </li>
               <% end %>
@@ -29,8 +29,15 @@
         </div> <!-- tracks cell -->
       </div> <!-- cells -->
       <div class="store-links">
-        <a href="<%= disk["itunes_link"] %>">Buy it on iTunes</a>
-        <a href="<%= disk["google_play_link"] %>">Buy it on Google Play</a>
+        <a href='<%= disk["itunes_link"] %>' class="store-link">
+          <img src="/img/itunes.png" alt="Available on iTunes" />
+        </a>
+
+        <a href='<%= disk["google_play_link"] %>' class="store-link">
+          <img src="/img/google_play.png" alt="Get it in Google Play"/>
+        </a>
+        <!-- <a href="<%= disk["itunes_link"] %>">Buy it on iTunes</a>
+        <a href="<%= disk["google_play_link"] %>">Buy it on Google Play</a> -->
       </div>
     </div> <!-- disk-wrapper -->
   </div> <!-- row -->
