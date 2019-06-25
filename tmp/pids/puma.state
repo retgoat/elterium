@@ -1,0 +1,4 @@
+---
+pid: 58476
+control_url: tcp://127.0.0.1:9293
+control_auth_token: c49ed84ef85695629639aeddf7c0cb

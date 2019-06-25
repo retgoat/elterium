@@ -10,6 +10,10 @@ gem "instagram"
 gem 'yt', '~> 0.28.0'
 gem "redis"
 gem 'dotenv-rails'
+gem "capistrano"
+gem "capistrano-bundler"
+gem "capistrano-puma"
+gem "capistrano-rvm"
 
 group :development do
   gem 'pry-byebug'
