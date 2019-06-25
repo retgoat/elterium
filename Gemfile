@@ -10,9 +10,9 @@ gem "instagram"
 gem 'yt', '~> 0.28.0'
 gem "redis"
 gem 'dotenv-rails'
-# gem "capistrano-rvm"
 
 group :development do
+  gem "capistrano-rvm"
   gem "capistrano"
   gem "capistrano-bundler"
   gem "capistrano-puma"

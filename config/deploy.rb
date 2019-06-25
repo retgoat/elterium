@@ -1,6 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 require "rvm/capistrano"
-require "bundler/capistrano"
+# require "bundler/capistrano"
+
 lock "~> 3.11.0"
 
 server 'easyquote.pw', user: 'deployer', roles: %w{web app}, port: 22123
@@ -19,6 +20,9 @@ set :rvm_type, :user
 set :rvm_ruby_version, '2.4.2' # use the same ruby as used locally for deployment
 
 set :deploy_to, "/home/deployer/web_apps/elterium.com"
+
+set :linked_files, %w{puma.rb .env}
+
 
 set :puma_threads,    [4, 16]
 set :puma_workers,    0

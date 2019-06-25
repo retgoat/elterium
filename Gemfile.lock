@@ -33,6 +33,9 @@ GEM
       capistrano (~> 3.1)
     capistrano-puma (0.2.3)
       capistrano (>= 3.0)
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     coderay (1.1.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
@@ -131,6 +134,7 @@ DEPENDENCIES
   capistrano
   capistrano-bundler
   capistrano-puma
+  capistrano-rvm
   dotenv-rails
   instagram
   pry-byebug
