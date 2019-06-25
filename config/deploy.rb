@@ -22,6 +22,7 @@ set :rvm_ruby_version, '2.4.2' # use the same ruby as used locally for deploymen
 set :deploy_to, "/home/deployer/web_apps/elterium.com"
 
 set :linked_files, %w{puma.rb .env}
+set :linked_dirs,  %w{log tmp}
 
 
 set :puma_threads,    [4, 16]
