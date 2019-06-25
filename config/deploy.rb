@@ -7,6 +7,8 @@ set :application,   "elterium"
 set :repo_url,      "git@github.com:retgoat/elterium.git"
 set :user,          "deployer"
 set :keep_releases, 10
+set :format,        :pretty
+set :log_level,     :debug
 set :ssh_options,   { forward_agent: true }
 set :branch,        ENV['BRANCH'] || :master
 set :keep_releases, 5
