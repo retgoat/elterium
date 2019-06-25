@@ -9,6 +9,7 @@ gem "shotgun"
 gem "instagram"
 gem 'yt', '~> 0.28.0'
 gem "redis"
+gem 'dotenv-rails'
 
 group :development do
   gem 'pry-byebug'

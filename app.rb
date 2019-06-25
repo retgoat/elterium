@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/r18n'
+require 'dotenv/load'
 require "instagram"
 require 'yt'
 require_relative "./cache.rb"
