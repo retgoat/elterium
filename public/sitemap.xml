@@ -6,25 +6,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
-  <loc>http://streetphoto.ru.com/</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://elterium.com/</loc>
+  <lastmod>2019-06-28T08:21:37+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://streetphoto.ru.com/about</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://elterium.com/band</loc>
+  <lastmod>2019-06-28T08:21:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://streetphoto.ru.com/photographers</loc>
-  <changefreq>monthly</changefreq>
+  <loc>https://elterium.com/music</loc>
+  <lastmod>2019-06-28T08:21:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://streetphoto.ru.com/404.html</loc>
-  <lastmod>2013-01-27T05:45:22+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
+  <loc>https://elterium.com/photos</loc>
+  <lastmod>2019-06-28T08:21:37+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://elterium.com/videos</loc>
+  <lastmod>2019-06-28T08:21:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
