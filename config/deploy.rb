@@ -17,7 +17,7 @@ set :branch,        ENV['BRANCH'] || :master
 set :keep_releases, 5
 
 set :rvm_type, :user
-set :rvm_ruby_version, '2.4.2' # use the same ruby as used locally for deployment
+set :rvm_ruby_version, '2.6.3' # use the same ruby as used locally for deployment
 
 set :deploy_to, "/home/deployer/web_apps/elterium.com"
 
