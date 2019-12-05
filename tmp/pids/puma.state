@@ -1,4 +1,4 @@
 ---
-pid: 95622
+pid: 96402
 control_url: tcp://127.0.0.1:9293
-control_auth_token: 7ac8a726aa49cfd51196ab65a2509f12
+control_auth_token: fec9783b545653898c3165081d386
