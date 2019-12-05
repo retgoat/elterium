@@ -1,11 +1,21 @@
 <div class="popup-gallery">
 
-  <% @data.each do |picture| %>
-    <a href="<%= picture.dig("images", "standard_resolution", "url") %>">
-      <img class="img-rounded" alt="Photo" src="<%= picture.dig("images", "low_resolution", "url") %>" style="width: 140px; height: 140px; margin: 10px">
-    </a>
+  <% @data.select { |el| %w[image carousel].include?(el["type"]) && el["videos"] == nil }.each do |picture| %>
+    <% title = picture.dig("caption", "text") %>
+    <% if picture["carousel_media"].present? %>
+      <% picture["carousel_media"].each do |carousel_image| %>
+        <a href="<%= carousel_image.dig("images", "standard_resolution", "url") %>" title="<%= title %>">
+          <img class="img-rounded" alt="Photo" src="<%= carousel_image.dig("images", "standard_resolution", "url") %>" style="width: 200px; height: 200px; margin: 10px">
+        </a>
+      <% end %>
+    <% else %>
+      <a href="<%= picture.dig("images", "standard_resolution", "url") %>" title="<%= title %>">
+        <img class="img-rounded" alt="Photo" src="<%= picture.dig("images", "standard_resolution", "url") %>" style="width: 200px; height: 200px; margin: 10px">
+      </a>
+    <% end %>
   <% end %>
 </div>
+
 <script type="text/javascript">
   $(document).ready(function() {
     $('.popup-gallery').magnificPopup({

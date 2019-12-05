@@ -39,9 +39,9 @@ class App < Sinatra::Base
   end
 
   get '/photos' do
-    @data = Cache.fetch('photos-cache', 86_400) do
-      Instagram.client(access_token: ENV["INSTAGRAM_TOKEN"]).user_recent_media
-    end
+    # @data = Cache.fetch('photos-cache', 86_400) do
+      @data = Instagram.client(access_token: ENV["INSTAGRAM_TOKEN"]).user_recent_media
+    # end
     erb :photos
   end
 
@@ -52,6 +52,10 @@ class App < Sinatra::Base
       channel.videos.map { |v| v.embed_html }
     end
     erb :videos
+  end
+
+  get '/oauth/callback' do
+    text 'FOO'
   end
 
   # not_found do
