@@ -65,9 +65,9 @@ disks:
         name: "Dirak's sea"
         duration: "00:03:05"
         number: 15
-    itunes_link: "https://itunes.apple.com/us/album/la-terre-est-bleue-comme-une-orange/id1208303564"
-    google_play_link: "https://play.google.com/store/music/album?id=Bsfr4sx5yhrzfvdfmpesolrl2ku&tid=song-T2l4vtknlqq7rirr22tngrpcnpu"
-    amazon_link: "https://www.amazon.com/gp/product/B01BPW05YM"
+    itunes_link: "https://music.apple.com/album/1208303564?l=en"
+    google_play_link: "https://play.google.com/store/music/album/Elterium_La_Terre_est_Bleue_Comme_une_Orange?id=Bsfr4sx5yhrzfvdfmpesolrl2ku&hl=en"
+    amazon_link: "https://www.amazon.com/xx/dp/B06W5NHMTD"
   -
     name: "Bushido"
     label: "Georgaphy Edge"
@@ -114,16 +114,16 @@ disks:
         duration: "00:01:54"
         name: "Per aspera ad astra"
         number: 10
-    itunes_link: "https://itunes.apple.com/us/album/bushido/id1208009998"
-    google_play_link: "https://play.google.com/store/music/album?id=B6db7rej2yum5wy26fptrj4dl3u&tid=song-Talnrfa4kkdsn6pkwaf6nm6q7oe"
-    amazon_link: "https://www.amazon.com/gp/product/B01BPTNEY8"
+    itunes_link: "https://music.apple.com/album/1208009998?l=en"
+    google_play_link: "https://play.google.com/store/music/album/Elterium_Bushido?id=B6db7rej2yum5wy26fptrj4dl3u&hl=en"
+    amazon_link: "https://www.amazon.com/xx/dp/B06WGZPWPV"
   -
     name: "Chain Reaction"
     label: "Georgaphy Edge"
     year: "2017"
     cover_name: "chain_2017.jpg"
-    itunes_link: "https://itunes.apple.com/ru/album/chain-reaction/id1220467986?l=en"
-    google_play_link: "https://play.google.com/store/music/album?id=Bzcj5qo6bakwzmyqsremohexe7m&hl=en"
+    itunes_link: "https://music.apple.com/ru/album/chain-reaction/1502030715?l=en"
+    google_play_link: "https://play.google.com/store/music/album/Elterium_Chain_Reaction?id=Bsiaxahgxr2wifudcd6poxgiw5y&hl=en"
     amazon_link: "https://www.amazon.com/gp/product/B01BPTNEY8"
     tracks:
       -
