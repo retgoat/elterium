@@ -2,7 +2,7 @@
 require "rvm/capistrano"
 # require "bundler/capistrano"
 
-lock "~> 3.11.0"
+lock "~> 3.14.1"
 
 server 'easyquote.pw', user: 'deployer', roles: %w{web app}, port: 22123
 
