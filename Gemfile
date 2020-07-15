@@ -6,7 +6,7 @@ gem 'sinatra-contrib'
 gem "puma"
 gem 'sinatra-twitter-bootstrap', '~> 2.3', '>= 2.3.4'
 gem "shotgun"
-gem "instagram"
+gem "instagram-continued"
 gem 'yt', '~> 0.28.0'
 gem "redis"
 gem 'dotenv'
