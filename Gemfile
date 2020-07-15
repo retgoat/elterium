@@ -7,7 +7,7 @@ gem "puma"
 gem 'sinatra-twitter-bootstrap', '~> 2.3', '>= 2.3.4'
 gem "shotgun"
 gem "instagram-continued"
-gem 'yt', '~> 0.28.0'
+gem 'yt', '~> 0.32.0'
 gem "redis"
 gem 'dotenv'
 
